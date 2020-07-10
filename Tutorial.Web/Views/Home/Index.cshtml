@@ -1,0 +1,18 @@
+﻿@model HomeIndexViewModel
+@{
+    ViewBag.Title = "Home Index";
+    
+}
+
+
+
+<partial name="_StudentTable" for="@Model.Students" />
+
+
+@section bottom{
+    <div>
+        <a asp-action="Create">创建学生</a>
+    </div>
+}
+
+
